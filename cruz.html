@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cruz</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+       <canvas
+            id="lines"
+            width="500px"
+            height="500px"
+            style="border: 2px solid gray;"
+        ></canvas>
+        <script>
+            window.addEventListener('load' , () => {
+                let lines = document.getElementById('lines'); 
+        
+                let ctx = lines.getContext('2d');
+    
+                ctx.beginPath();
+                ctx.strokeStyole = 'green';
+                ctx.moveTo(0,250);
+                ctx.lineTo(500, 250);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.strokeStyole = 'green';
+                ctx.moveTo(250, 0);
+                ctx.lineTo(250, 500);
+                ctx.stroke();
+            })
+        
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cruz</title>
+        <meta charset="UTF-8">
+    </head>
+        <!-- <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background: #e2d7f5;
+            }
+            .contenedor {
+                margin: auto;
+                width: 900px;
+                margin-top: 300px;
+                text-align: center;
+            }
+            .titulo{
+                margin-bottom: 20px;
+            }
+            .opciones p {
+                background: #ffa02a;
+                display: initial;
+                padding: 12px;
+                color: #ffffff;
+                border-radius: 2px;
+                font-weight: bold;
+            }
+            p.p1 {
+                position: absolute;
+                top: 400px;
+                left: 609px;
+                width: 100px;
+            }
+            p.p2{
+                position: absolute;
+                top: 400px;
+                left: 800px;
+                width: 100px;
+            }
+            #si {
+                background: #515050;
+                left: 420px;position: absolute;
+                top: 122px;
+                width: 550px;
+                color: #ffffff;
+                padding: 50px;
+                display: none;
+            }
+        </style> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <body>
+       <canvas
+            id="lines"
+            width="500px"
+            height="500px"
+            style="border: 2px solid gray;"
+        ></canvas>
+        <script>
+    
+            window.addEventListener('load' , () => {
+                let lines = document.getElementById('lines'); 
+        
+                let ctx = lines.getContext('2d');
+    
+                ctx.beginPath();
+                ctx.strokeStyole = 'green';
+                ctx.moveTo(0,250);
+                ctx.lineTo(500, 250);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.strokeStyole = 'green';
+                ctx.moveTo(250, 0);
+                ctx.lineTo(250, 500);
+                ctx.stroke();
+            })
+        
+        </script>
+    </body>
+
+</html>
